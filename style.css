@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: 'Marck Script', cursive;
+	font-size: 20pt;
+	color: #fba6b0;
+	text-shadow: 2px 3px 5px white;
+	background-color: #adeaeb;
+}
+
+div{
+	border: 4px solid #fdf1e5;
+}
+
+.item_miami{
+	grid-area: miami;
+	width: 425px;
+	height: 490px;
+	background-image: url(images/1-1.png);
+}
+
+.item_miami p{
+	opacity: 0;
+	width: 365px;
+	height: 460px;
+	padding: 25px;
+	background-color: rgba(207, 164, 191, 0.5);
+	color: #fbfdbe;
+	border-radius: 0 0 60%;
+	text-align: justify;
+	transform-origin: center top;
+	transition: opacity 1s linear, transform 1s linear;
+	transform:rotateX(-180deg)
+}
+
+.about{
+	border-top: 1px solid white;
+}
+
+.place_name{
+	text-align: center;
+	font-size: 30pt:
+}
+
+.item_miami:hover p{
+	opacity: 1;
+	transform:rotateX(0);
+}
+
+
+
+.item_atlanta{
+	grid-area: atlanta;
+	width: 425px;
+	height: 490px;
+	background-image: url(images/atlanta-skyline.jpg);
+}
+
+
+.item_atlanta p{
+	opacity: 0;
+	width: 375px;
+	height: 450px;
+	padding: 25px;
+	background-color: rgba(207, 164, 191, 0.4);
+	color: #fbfdbe;
+	border-radius: 0 0 60%;
+	text-align: justify;
+	transform-origin: center top;
+	transition: opacity 1s linear, transform 1s linear;
+	transform:rotateY(180deg)
+}
+
+
+.item_atlanta:hover p{
+	opacity: 1;
+	transform:rotateX(0);
+}
+
+.item_quote1{
+	grid-area: quote1;
+	padding: 15;
+}
+
+
+
+.item_oslo{
+	grid-area: oslo;
+	width: 850px;
+	height: 300px;
+	background-image: url(images/Think-Norway-Oslo-494086312-Baiaz-copy-900x514.jpg);
+}
+
+.item_oslo p{
+	opacity: 0;
+	transform:scale(0.1,0.1);
+	width: 800px;
+	height: 255px;
+	padding: 25px;
+	background-color: rgba(207, 164, 191, 0.4);
+	color: #fbfdbe;
+	text-align: center;
+	transition: opacity 1s linear, transform 1s linear;
+}
+
+
+.item_oslo:hover p{
+	opacity: 1;
+	transform:scale(1,1);
+}
+
+
+
+.item_hotyn{
+	grid-area: hotyn;
+	width: 425px;
+	height: 500px;
+	background-image: url(images/Chocim_stronghold.jpg);
+}
+
+.item_hotyn p{
+	opacity: 0;
+	width: 380px;
+	height: 460px;
+	padding: 25px;
+	background-color: rgba(207, 164, 191, 0.4);
+	color: #fbfdbe;;
+	text-align: center;
+	transition: opacity 1s linear, transform 1s linear;
+}
+
+
+.item_hotyn:hover p{
+	opacity: 1;
+	transform:skewX(0deg);
+}
+
+
+
+.item-quote2{
+	grid-area: quote2;
+	padding: 15px;
+}
+
+.header_item{
+	grid-area: header;
+	padding: 15px;
+}
+
+.footer-item{
+	grid-area: footer;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto 250px;
+	grid-template-areas: "header header header" "miami atlanta quote1" "oslo oslo hotyn" "quote2 quote2 hotyn";
+	grid-column-gap: 10px;
+	grid-row-gap: 15px;
+	justify-items: center;
+	align-items: center;
+}
+	
